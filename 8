@@ -1,0 +1,70 @@
+START
+
+DISPLAY "RECURSION VS ITERATION"
+
+READ InputSize
+
+DISPLAY "Choose Method"
+
+DISPLAY "1. Recursion"
+
+DISPLAY "2. Iteration"
+
+READ Choice
+
+IF Choice = 1 THEN
+
+    DISPLAY "Using Recursion"
+
+    CALL RecursiveFunction(InputSize)
+
+ELSE
+
+    DISPLAY "Using Iteration"
+
+    FOR Count = 1 TO InputSize
+
+        DISPLAY Count
+
+    END FOR
+
+END IF
+
+DISPLAY "Compare Both Methods"
+
+DISPLAY "Recursion Uses Call Stack"
+
+DISPLAY "Iteration Uses Loop Control"
+
+DISPLAY "Recursion Requires More Memory"
+
+DISPLAY "Iteration Requires Less Memory"
+
+IF InputSize > 1000 THEN
+
+    DISPLAY "Iteration is More Efficient"
+
+ELSE
+
+    DISPLAY "Recursion is Suitable"
+
+END IF
+
+DISPLAY "Execution Completed"
+
+STOP
+
+
+FUNCTION RecursiveFunction(Number)
+
+    IF Number = 0 THEN
+
+        RETURN
+
+    END IF
+
+    DISPLAY Number
+
+    CALL RecursiveFunction(Number - 1)
+
+END FUNCTION
