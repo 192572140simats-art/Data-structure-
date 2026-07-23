@@ -1,0 +1,75 @@
+START
+
+DISPLAY "RIDE SHARING APPLICATION"
+
+/* Abstract Data Type */
+
+DEFINE RideSharingADT
+
+DISPLAY "Create User Request"
+
+DISPLAY "Allocate Driver"
+
+DISPLAY "Find Route"
+
+DISPLAY "Complete Ride"
+
+/* Linear Structures */
+
+CREATE Queue UserRequests
+
+CREATE Array DriverList
+
+INSERT User Request INTO Queue
+
+STORE Driver Details IN Array
+
+/* Non-Linear Structures */
+
+CREATE Graph RoadNetwork
+
+CREATE Tree CityZones
+
+MAP Roads USING Graph
+
+ORGANIZE Areas USING Tree
+
+/* Algorithms */
+
+SEARCH Nearest Driver
+
+FIND Shortest Route
+
+ALLOCATE Driver
+
+/* Performance Analysis */
+
+MEASURE Execution Time
+
+MEASURE Memory Usage
+
+CALCULATE Efficiency
+
+IF Driver Available THEN
+
+    DISPLAY "Driver Assigned"
+
+ELSE
+
+    DISPLAY "No Driver Available"
+
+END IF
+
+DISPLAY "ADT Provides Operations"
+
+DISPLAY "Linear Structures Manage Requests"
+
+DISPLAY "Non-Linear Structures Handle Maps"
+
+DISPLAY "Algorithms Improve Route Selection"
+
+DISPLAY "Performance Analysis Measures Speed"
+
+DISPLAY "Efficient System Achieved"
+
+STOP
