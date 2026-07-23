@@ -1,0 +1,59 @@
+START
+
+DISPLAY "LIBRARY MANAGEMENT SYSTEM"
+
+READ NumberOfBooks
+
+CREATE Array BookRecords
+
+FOR Each Book
+
+    READ BookID
+
+    READ Title
+
+    READ Author
+
+    READ AvailabilityStatus
+
+    STORE Book Details
+
+END FOR
+
+DISPLAY "Data Collected"
+
+ORGANIZE Records
+
+CREATE LinkedList BookList
+
+CREATE Tree BookCategories
+
+CREATE Graph RelatedBooks
+
+DISPLAY "Select Access Method"
+
+DISPLAY "1. Sequential Access"
+
+DISPLAY "2. Direct Search"
+
+READ Choice
+
+IF Choice = 1 THEN
+
+    TRAVERSE BookRecords
+
+ELSE
+
+    SEARCH Book USING BookID
+
+END IF
+
+DISPLAY "Efficient Data Organization"
+
+DISPLAY "Fast Record Retrieval"
+
+DISPLAY "Improved Search Efficiency"
+
+DISPLAY "Better System Performance"
+
+STOP
