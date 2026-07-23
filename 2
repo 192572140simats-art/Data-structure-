@@ -1,0 +1,51 @@
+START
+
+DISPLAY "SMART CITY TRAFFIC MANAGEMENT SYSTEM"
+
+/* Primitive Data Structures */
+DECLARE Integer VehicleID
+DECLARE Float Speed
+DECLARE Character Signal
+DECLARE Boolean TrafficStatus
+
+READ VehicleID
+READ Speed
+READ Signal
+READ TrafficStatus
+
+/* Non-Primitive Data Structures */
+CREATE Array VehicleList
+CREATE LinkedList WaitingVehicles
+CREATE Tree RoadHierarchy
+CREATE Graph RoadNetwork
+
+STORE VehicleID IN VehicleList
+INSERT WaitingVehicles
+ADD RoadHierarchy
+CONNECT RoadNetwork
+
+DISPLAY "Linear Data Structures"
+DISPLAY "1. Array"
+DISPLAY "2. Linked List"
+
+DISPLAY "Non-Linear Data Structures"
+DISPLAY "1. Tree"
+DISPLAY "2. Graph"
+
+/* Applications */
+USE Array FOR Vehicle Records
+USE LinkedList FOR Traffic Signal Queue
+USE Tree FOR Road Hierarchy
+USE Graph FOR Route Mapping
+
+PROCESS Vehicle Movement
+
+IF TrafficStatus = TRUE THEN
+    DISPLAY "Traffic Flow is Normal"
+ELSE
+    DISPLAY "Traffic Congestion Detected"
+END IF
+
+DISPLAY "Traffic Data Organized Successfully"
+
+STOP
