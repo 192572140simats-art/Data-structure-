@@ -1,0 +1,57 @@
+START
+
+DISPLAY "SOCIAL MEDIA PLATFORM"
+
+CREATE Tree UserHierarchy
+
+CREATE Graph SocialNetwork
+
+ADD Users
+
+CONNECT Friends
+
+DISPLAY "Choose Traversal"
+
+DISPLAY "1. DFS"
+
+DISPLAY "2. BFS"
+
+READ Choice
+
+IF Choice = 1 THEN
+
+    PERFORM Depth First Search
+
+    DISPLAY "DFS Traversal Completed"
+
+ELSE
+
+    PERFORM Breadth First Search
+
+    DISPLAY "BFS Traversal Completed"
+
+END IF
+
+DISPLAY "Tree Represents Hierarchical Data"
+
+DISPLAY "Graph Represents User Connections"
+
+DISPLAY "Network Data Stored in Graph"
+
+DISPLAY "Searching Users Using DFS and BFS"
+
+IF Network is Large THEN
+
+    DISPLAY "Graph is More Suitable"
+
+ELSE
+
+    DISPLAY "Tree Can Be Used"
+
+END IF
+
+DISPLAY "Graph Supports Multiple Relationships"
+
+DISPLAY "Efficient Search Completed"
+
+STOP
