@@ -1,0 +1,90 @@
+START
+
+DISPLAY "WEATHER MONITORING SYSTEM"
+
+/* Primitive Data Types */
+
+DECLARE Integer Temperature
+DECLARE Float Humidity
+DECLARE Float WindSpeed
+DECLARE Character WeatherStatus
+DECLARE Boolean Rain
+
+READ Temperature
+READ Humidity
+READ WindSpeed
+READ WeatherStatus
+READ Rain
+
+/* Non-Primitive Data Structures */
+
+CREATE Structure WeatherRecord
+
+STORE Temperature
+STORE Humidity
+STORE WindSpeed
+STORE WeatherStatus
+STORE Rain
+
+/* Linear Data Structures */
+
+CREATE Array DailyTemperature
+CREATE LinkedList WeatherUpdates
+CREATE Queue SensorData
+
+INSERT Temperature INTO DailyTemperature
+INSERT WeatherRecord INTO WeatherUpdates
+ENQUEUE SensorData
+
+/* Non-Linear Data Structures */
+
+CREATE Tree WeatherHistory
+CREATE Graph WeatherStationNetwork
+
+ADD WeatherRecord TO Tree
+
+CONNECT WeatherStations USING Graph
+
+/* Applications */
+
+DISPLAY "Temperature Monitoring"
+
+DISPLAY "Humidity Monitoring"
+
+DISPLAY "Wind Speed Analysis"
+
+DISPLAY "Weather Forecasting"
+
+DISPLAY "Continuous Data Collection"
+
+/* Continuous Processing */
+
+WHILE SensorData Available
+
+    READ New Sensor Values
+
+    UPDATE WeatherRecord
+
+    STORE IN Array
+
+    ENQUEUE SensorData
+
+    UPDATE Tree
+
+    UPDATE Graph
+
+END WHILE
+
+DISPLAY "Primitive Data Types Store Individual Values"
+
+DISPLAY "Non-Primitive Structures Organize Weather Records"
+
+DISPLAY "Linear Structures Handle Sequential Sensor Data"
+
+DISPLAY "Non-Linear Structures Support Historical Analysis"
+
+DISPLAY "Applications Improve Weather Monitoring"
+
+DISPLAY "System Performance Improved"
+
+STOP
