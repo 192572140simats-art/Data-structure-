@@ -1,0 +1,81 @@
+START
+
+DISPLAY "SEARCHING ALGORITHMS"
+
+READ NumberOfRecords
+
+CREATE Array Records
+
+READ All Records
+
+DISPLAY "Select Search Method"
+
+DISPLAY "1. Linear Search"
+
+DISPLAY "2. Binary Search"
+
+READ Choice
+
+IF Choice = 1 THEN
+
+    READ SearchKey
+
+    FOR Index = 1 TO NumberOfRecords
+
+        IF Records[Index] = SearchKey THEN
+
+            DISPLAY "Record Found"
+
+            EXIT LOOP
+
+        END IF
+
+    END FOR
+
+    DISPLAY "Time Complexity = O(n)"
+
+ELSE IF Choice = 2 THEN
+
+    SORT Records
+
+    READ SearchKey
+
+    SET Low = 1
+
+    SET High = NumberOfRecords
+
+    WHILE Low <= High
+
+        SET Mid = (Low + High) / 2
+
+        IF Records[Mid] = SearchKey THEN
+
+            DISPLAY "Record Found"
+
+            EXIT LOOP
+
+        ELSE IF SearchKey < Records[Mid] THEN
+
+            High = Mid - 1
+
+        ELSE
+
+            Low = Mid + 1
+
+        END IF
+
+    END WHILE
+
+    DISPLAY "Time Complexity = O(log n)"
+
+END IF
+
+DISPLAY "Compare Number of Operations"
+
+DISPLAY "Linear Search -> More Comparisons"
+
+DISPLAY "Binary Search -> Fewer Comparisons"
+
+DISPLAY "Binary Search is More Efficient for Sorted Data"
+
+STOP
