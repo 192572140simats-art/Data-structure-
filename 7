@@ -1,0 +1,43 @@
+START
+
+DISPLAY "FILE SYSTEM USING RECURSION"
+
+READ FolderName
+
+CALL TraverseFolder(FolderName)
+
+STOP
+
+
+FUNCTION TraverseFolder(Folder)
+
+    IF Folder is Empty THEN
+        DISPLAY "Base Case Reached"
+        RETURN
+    END IF
+
+    DISPLAY "Current Folder :", Folder
+
+    FOR EACH File IN Folder
+        DISPLAY File
+    END FOR
+
+    FOR EACH SubFolder IN Folder
+
+        DISPLAY "Recursive Call"
+
+        CALL TraverseFolder(SubFolder)
+
+    END FOR
+
+    DISPLAY "Return to Previous Folder"
+
+END FUNCTION
+
+DISPLAY "Function Calls Stored in Call Stack"
+
+DISPLAY "Call Stack Uses Memory"
+
+DISPLAY "Recursion Suitable for Hierarchical Structures"
+
+STOP
