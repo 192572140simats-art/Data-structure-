@@ -1,0 +1,49 @@
+START
+
+DISPLAY "SMART HEALTHCARE SYSTEM"
+
+READ Patient_ID
+READ Patient_Name
+READ Temperature
+READ Medical_History
+READ Diagnostic_Details
+
+/* Data Object */
+CREATE Patient_Record
+
+/* Data Structure */
+STORE Patient_Record USING Structure
+LINK Records USING Pointers
+
+/* Abstract Data Type (ADT) */
+REPEAT
+    DISPLAY "1. Insert Patient"
+    DISPLAY "2. Search Patient"
+    DISPLAY "3. Update Patient"
+    DISPLAY "4. Delete Patient"
+    DISPLAY "5. Display Patient Records"
+    DISPLAY "6. Exit"
+
+    READ Choice
+
+    IF Choice = 1 THEN
+        INSERT Patient_Record
+    ELSE IF Choice = 2 THEN
+        SEARCH Patient_Record BY Patient_ID
+    ELSE IF Choice = 3 THEN
+        UPDATE Patient_Record
+    ELSE IF Choice = 4 THEN
+        DELETE Patient_Record
+    ELSE IF Choice = 5 THEN
+        DISPLAY Patient_Record
+    ELSE IF Choice = 6 THEN
+        EXIT
+    ELSE
+        DISPLAY "Invalid Choice"
+    END IF
+
+UNTIL Choice = 6
+
+DISPLAY "Data Processed Successfully"
+
+STOP
