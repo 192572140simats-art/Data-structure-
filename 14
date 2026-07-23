@@ -1,0 +1,71 @@
+START
+
+DISPLAY "TICKET BOOKING SYSTEM"
+
+DEFINE TicketBookingADT
+
+DISPLAY "Operations"
+
+DISPLAY "1. Book Ticket"
+
+DISPLAY "2. Cancel Ticket"
+
+DISPLAY "3. Allocate Seat"
+
+DISPLAY "4. Exit"
+
+READ Choice
+
+IF Choice = 1 THEN
+
+    READ PassengerDetails
+
+    BOOK Ticket
+
+ELSE IF Choice = 2 THEN
+
+    READ TicketNumber
+
+    CANCEL Ticket
+
+ELSE IF Choice = 3 THEN
+
+    ALLOCATE Seat
+
+ELSE
+
+    DISPLAY "Exit"
+
+END IF
+
+DISPLAY "Implementation"
+
+CREATE Array SeatList
+
+CREATE LinkedList WaitingList
+
+DISPLAY "Compare Implementations"
+
+DISPLAY "Array -> Fast Access"
+
+DISPLAY "Linked List -> Easy Insert/Delete"
+
+IF WaitingList Exists THEN
+
+    USE LinkedList
+
+ELSE
+
+    USE Array
+
+END IF
+
+DISPLAY "Measure Performance"
+
+DISPLAY "Execution Time"
+
+DISPLAY "Memory Usage"
+
+DISPLAY "Real-Time Booking Improved"
+
+STOP
