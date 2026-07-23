@@ -1,0 +1,75 @@
+START
+
+DISPLAY "MUSIC STREAMING APPLICATION"
+
+CREATE Array Playlist
+
+CREATE LinkedList SongList
+
+CREATE Stack RecentlyPlayed
+
+CREATE Queue PlayQueue
+
+DISPLAY "Playlist Operations"
+
+DISPLAY "1. Insert Song"
+
+DISPLAY "2. Delete Song"
+
+DISPLAY "3. Traverse Playlist"
+
+DISPLAY "4. Play Song"
+
+DISPLAY "5. Exit"
+
+READ Choice
+
+IF Choice = 1 THEN
+
+    READ SongName
+
+    INSERT SongName INTO LinkedList
+
+    ADD SongName TO Queue
+
+    DISPLAY "Song Added"
+
+ELSE IF Choice = 2 THEN
+
+    READ SongName
+
+    DELETE SongName FROM LinkedList
+
+    DISPLAY "Song Removed"
+
+ELSE IF Choice = 3 THEN
+
+    TRAVERSE LinkedList
+
+    DISPLAY Playlist
+
+ELSE IF Choice = 4 THEN
+
+    REMOVE Song FROM Queue
+
+    PUSH Song INTO Stack
+
+    DISPLAY "Playing Song"
+
+ELSE
+
+    DISPLAY "Exit"
+
+END IF
+
+DISPLAY "Array -> Fixed Playlist"
+
+DISPLAY "Linked List -> Flexible Playlist"
+
+DISPLAY "Stack -> Recently Played Songs"
+
+DISPLAY "Queue -> Play Next"
+
+DISPLAY "Linked List is Best for Playlist Management"
+
+STOP
