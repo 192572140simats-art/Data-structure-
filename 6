@@ -1,0 +1,75 @@
+START
+
+DISPLAY "BANKING SYSTEM"
+
+/* Abstract Data Type */
+
+DEFINE BankAccount ADT
+
+DISPLAY "Banking Operations"
+
+DISPLAY "1. Deposit"
+
+DISPLAY "2. Withdraw"
+
+DISPLAY "3. Balance Enquiry"
+
+DISPLAY "4. Transaction History"
+
+DISPLAY "5. Exit"
+
+READ Choice
+
+IF Choice = 1 THEN
+
+    READ Amount
+
+    DEPOSIT Amount
+
+    DISPLAY "Amount Deposited Successfully"
+
+ELSE IF Choice = 2 THEN
+
+    READ Amount
+
+    WITHDRAW Amount
+
+    DISPLAY "Amount Withdrawn Successfully"
+
+ELSE IF Choice = 3 THEN
+
+    DISPLAY AccountBalance
+
+ELSE IF Choice = 4 THEN
+
+    DISPLAY TransactionHistory
+
+ELSE
+
+    DISPLAY "Exit"
+
+END IF
+
+DISPLAY "Interface Provides Banking Operations"
+
+DISPLAY "Implementation Uses Functions"
+
+DISPLAY "Data Structures Used"
+
+DISPLAY "Array"
+
+DISPLAY "Linked List"
+
+DISPLAY "Queue"
+
+DISPLAY "Stack"
+
+DISPLAY "ADT Separates Interface from Implementation"
+
+DISPLAY "Improves Modularity"
+
+DISPLAY "Improves Reusability"
+
+DISPLAY "Improves Maintainability"
+
+STOP
