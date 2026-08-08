@@ -1,0 +1,41 @@
+12. Predict the Output – Queue ADT Concept
+
+
+
+#include <stdio.h>
+
+#define SIZE 5
+
+int queue[SIZE];
+
+int front = 0, rear = -1;
+
+void enqueue(int x) {
+
+queue[++rear] = x;
+
+}
+
+int dequeue() {
+
+return queue[front++];
+}
+int main() {
+
+enqueue(10);
+
+enqueue(20);
+
+enqueue(30);
+
+printf("%d ", dequeue());
+
+printf("%d ", dequeue());
+
+return 0;
+
+}
+
+Question: Predict the output and identify the principle followed by the ADT.
+Output:
+10 20
