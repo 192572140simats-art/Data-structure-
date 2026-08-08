@@ -1,0 +1,22 @@
+5. Predict the Output – Character Array
+
+
+
+#include <stdio.h>
+
+int main() {
+
+char str[] = "DATA";
+
+printf("%c %c %c",
+
+str[0], str[2], str[3]);
+
+return 0;}
+
+Question: Predict the output and identify the type of data structure represented
+
+by str.
+
+Output:
+   D T A
