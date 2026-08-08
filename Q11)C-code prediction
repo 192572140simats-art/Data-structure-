@@ -1,0 +1,41 @@
+11. Predict the Output – Stack ADT Concept
+
+
+
+#include <stdio.h>
+
+#define SIZE 5
+
+int stack[SIZE];
+
+int top = -1;
+
+void push(int x) {
+
+stack[++top] = x;
+
+}
+
+int pop() {
+
+return stack[top--];
+}
+int main() {
+
+push(10);
+
+push(20);
+
+push(30);
+
+printf("%d ", pop());
+
+printf("%d ", pop());
+
+return 0;
+
+}
+
+Question: Predict the output and identify the ADT operation being performed
+Output:
+30 20
