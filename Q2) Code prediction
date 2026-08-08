@@ -1,0 +1,15 @@
+2. Predict the Output – Data Object
+#include <stdio.h>
+int main() {
+ int x = 5;
+ int y = x;
+ 
+ x = 10;
+ printf("%d %d", x, y);
+ return 0;
+}
+Question: Predict the output and explain why changing x does not change y.
+
+Output:
+  x=10
+  y=5
