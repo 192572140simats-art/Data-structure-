@@ -1,0 +1,27 @@
+3. Predict the Output – Structure
+#include <stdio.h>
+struct Student {
+ int id;
+ float mark;
+};
+int main() {
+ struct Student s = {101, 85.5};
+ printf("%d %.1f", s.id, s.mark);
+ return 0;
+}
+Question: Predict the output and identify the data object created by the
+declaration.
+
+Output:
+     101, 85.5
+
+explanation:
+
+     The structure is:
+struct Student {
+    int id;
+    float mark;
+};
+Then:
+struct Student s = {101, 85.5};
+
