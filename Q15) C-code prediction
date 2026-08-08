@@ -1,0 +1,26 @@
+15. Predict the Output – Reverse Recursion
+
+
+
+#include <stdio.h>
+
+void fun(int n) {
+
+if(n == 0)
+return;
+
+fun(n - 1);
+
+printf("%d ", n);
+
+}
+
+int main() {
+
+fun(5);
+
+return 0;
+
+}
+Output:
+1 2 3 4 5
